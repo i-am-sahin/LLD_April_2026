@@ -2,6 +2,9 @@ package lld1_april_2026.class_basics.lab_employee;
 
 public class EmployeeDemo {
     static void main() {
+
+//        Employee emp1 = new Employee("EMP001", "Rahul Sharma", "rahul@google.com", "Engineering", 1200000, 3);
+
         Employee emp1 = new Employee();
         emp1.employeeId = "EMP0001";
         emp1.name = "Rahul Sharma";
