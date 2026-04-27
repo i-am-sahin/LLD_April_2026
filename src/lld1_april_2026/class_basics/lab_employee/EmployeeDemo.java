@@ -13,6 +13,12 @@ public class EmployeeDemo {
         );
         System.out.println("\n Object Created successfully and assign to emp1!");
 
+
+        Employee emp2 = new Employee("EMP002");
+        Employee emp3 = new Employee();
+
+//        Employee emp4 = new Employee("EMP004", "sahin"); -> I don't have a Constructor like Employee(String,string);
+
 //        Employee emp1 = new Employee();
 //        emp1.employeeId = "EMP0001";
 //        emp1.name = "Rahul Sharma";

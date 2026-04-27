@@ -30,21 +30,26 @@ public class Employee {
     double salary;
     double yearsOfExperience;
 
-
+        //Constructor 1 : no Parameters
     //default Constructor : Java automatically Generates this & assigns all the attributes to it's default value.
-//    Employee(){
-//        employeeId = null;
-//        name = null;
-//        email = null;
-//        department = null;
-//        salary = 0.0;
-//        yearsOfExperience = 0.0;
-//    }
+    Employee(){
+        employeeId = null;
+        name = null;
+        email = null;
+        department = null;
+        salary = 0.0;
+        yearsOfExperience = 0.0;
+    }
+
+    //Constructor 2 : Only employeeId.
+    public Employee(String employeeId){
+        this.employeeId = employeeId;
+    }
 
 
 
 
-
+        // Constructor : with all the Parameters
     public Employee(String employeeId,
                     String name,
                     String email,
