@@ -2,7 +2,7 @@ package lld1_april_2026.class_basics.lab_employee;
 
 public class EmployeeDemo {
     static void main() {
-
+        System.out.println("Creating a new employee Rahul");
         Employee emp1 = new Employee(
                 "EMP001",
                 "Rahul Sharma",
@@ -11,6 +11,7 @@ public class EmployeeDemo {
                 1200000,
                 3
         );
+        System.out.println("\n Object Created successfully and assign to emp1!");
 
 //        Employee emp1 = new Employee();
 //        emp1.employeeId = "EMP0001";
@@ -36,12 +37,19 @@ public class EmployeeDemo {
 //        emp3.salary = 800000;
 //        emp3.yearsOfExperience = 1;
 
-        //Test behaviors
-        emp1.displayInfo();
-        emp1.getPromotion(15); // 15% raise
-        emp1.changeDepartment("Platform");
-        emp1.displayInfo();
+                    //Test behaviors
+//        emp1.displayInfo();
+//        emp1.getPromotion(15); // 15% raise
+//        emp1.changeDepartment("Platform");
+//        emp1.displayInfo();
 
 //        emp3.getPromotion(20); // 20% raise
     }
 }
+/*
+Order of execution
+1. Memory allocation - space is reserved for the object
+2. Default initialization - Fields get defaults values
+3. Constructor execution - Your code inside constructor runs
+4. Reference return - Object address is assigned to the value
+ */

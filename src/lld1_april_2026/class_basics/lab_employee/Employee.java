@@ -47,17 +47,38 @@ public class Employee {
 
     public Employee(String employeeId,
                     String name,
-                String email,
-                String department,
-                double salary,
-                double yearsOfExperience
+                    String email,
+                    String department,
+                    double salary,
+                    double yearsOfExperience
     ){
+
+        System.out.println("--- STEP 1: memory allocated, default values set ---");
+        System.out.println("Before assignment:");
+        System.out.println("employeeId: " + this.employeeId); //"this -> means here the actual object; ex : emp1.employeeId"
+        System.out.println("name: " + this.name);
+        System.out.println("email: " + this.email);
+        System.out.println("department: " + this.department);
+        System.out.println("salary: " + this.salary);
+        System.out.println("yearsOfExperience: " + this.yearsOfExperience);
+
+
         this.employeeId = employeeId;
         this.name = name;
         this.email = email;
         this.department = department;
         this.salary = salary;
         this.yearsOfExperience = yearsOfExperience;
+
+
+        System.out.println("After assignment:");
+        System.out.println("employeeId: " + this.employeeId);
+        System.out.println("name: " + this.name);
+        System.out.println("email: " + this.email);
+        System.out.println("department: " + this.department);
+        System.out.println("salary: " + this.salary);
+        System.out.println("yearsOfExperience: " + this.yearsOfExperience);
+
     }
 
 
