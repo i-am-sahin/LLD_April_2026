@@ -32,14 +32,35 @@ public class Employee {
 
 
     //default Constructor : Java automatically Generates this & assigns all the attributes to it's default value.
-    Employee(){
-        employeeId = null;
-        name = null;
-        email = null;
-        department = null;
-        salary = 0.0;
-        yearsOfExperience = 0.0;
+//    Employee(){
+//        employeeId = null;
+//        name = null;
+//        email = null;
+//        department = null;
+//        salary = 0.0;
+//        yearsOfExperience = 0.0;
+//    }
+
+
+
+
+
+    public Employee(String employeeId,
+                    String name,
+                String email,
+                String department,
+                double salary,
+                double yearsOfExperience
+    ){
+        this.employeeId = employeeId;
+        this.name = name;
+        this.email = email;
+        this.department = department;
+        this.salary = salary;
+        this.yearsOfExperience = yearsOfExperience;
     }
+
+
     void getPromotion(double percentage){
         if(percentage < 0){
             System.out.println("Invalid percentage");
