@@ -12,13 +12,36 @@ We should be able to check if a book is currently available
 
 */
 public class Book {
-    String title;
-    String author;
-    String ISBN;
-    double price;
-    int noOfPages;
-    boolean isAvailable;
-    void Borrow(){
+    private String title;
+    private String author;
+    private String ISBN;
+    private double price;
+    private int noOfPages;
+    private boolean isAvailable;
+
+    public Book(String title, String author, String ISBN, double price, int noOfPages, boolean isAvailable) {
+        this.title = title;
+        this.author = author;
+        this.ISBN = ISBN;
+        this.price = price;
+        this.noOfPages = noOfPages;
+        this.isAvailable = isAvailable;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public String getAuthor() {
+        return author;
+    }
+
+
+    public void setPrice(double price) {
+        this.price = price;
+    }
+
+    public void Borrow(){
         if(isAvailable){
             isAvailable = false;
             System.out.println(title + " has been borrowed!");
@@ -26,11 +49,11 @@ public class Book {
             System.out.println(title + " is not available!");
         }
     }
-    void returnBook(){
+    public void returnBook(){
         isAvailable = true;
         System.out.println(title + " has been returned!");
     }
-    void displayInfo(){
+    public void displayInfo(){
         System.out.println("Title: " + title);
         System.out.println("Author: " + author);
         System.out.println("ISBN: " + ISBN);
