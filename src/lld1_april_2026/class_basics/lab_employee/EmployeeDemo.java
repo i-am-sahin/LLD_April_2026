@@ -1,7 +1,7 @@
 package lld1_april_2026.class_basics.lab_employee;
 
 public class EmployeeDemo {
-    static void main() {
+    public static void main() {
         System.out.println("Creating a new employee Rahul");
         Employee emp1 = new Employee(
                 "EMP001",

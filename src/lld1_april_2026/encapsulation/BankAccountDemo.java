@@ -7,7 +7,7 @@ public class BankAccountDemo {
         account.deposit(-1000); // won't add because amount is in negative.
         account.deposit(1000);
 
-        System.out.println(account.getBalance());
+        System.out.println(account.checkBalance());
 
     }
 }
