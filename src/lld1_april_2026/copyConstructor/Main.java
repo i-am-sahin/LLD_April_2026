@@ -3,7 +3,7 @@ package lld1_april_2026.copyConstructor;
 public class Main {
     static void main() {
 
-        Address s1Address = new Address("Kolkata","India","700124");
+        Address s1Address = new Address("Kolkata","India");
         Student s1 = new Student("Priya", 22, 87.6,s1Address);
 
         //Shallow Copy

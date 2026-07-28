@@ -13,12 +13,13 @@ public class Student {
         this.address = address;
     }
 
-    // This is a copy constructor
+    // This is a Deep constructor
     public Student(Student other){
         this.name = other.name;  // s2.name = s1.name;
         this.age = other.age;
         this.psp = other.psp;
-        this.address = other.address;
+        //Create new address with the same values.
+        this.address = new Address(other.address);
     }
 
     public String getName() {

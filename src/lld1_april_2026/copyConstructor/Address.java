@@ -3,12 +3,17 @@ package lld1_april_2026.copyConstructor;
 public class Address {
     private String city;
     private String country;
-    private String zipCode;
 
-    public Address(String city, String country, String zipCode) {
+
+    public Address(Address other) {
+        this.city = other.city;
+        this.country = other.country;
+    }
+
+    public Address(String city, String country) {
         this.city = city;
         this.country = country;
-        this.zipCode = zipCode;
+
     }
 
     public String getCity() {
@@ -19,13 +24,7 @@ public class Address {
         this.city = city;
     }
 
-    public String getZipCode() {
-        return zipCode;
-    }
 
-    public void setZipCode(String zipCode) {
-        this.zipCode = zipCode;
-    }
 
     public String getCountry() {
         return country;
