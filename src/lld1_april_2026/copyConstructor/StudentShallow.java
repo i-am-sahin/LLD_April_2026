@@ -1,25 +1,26 @@
 package lld1_april_2026.copyConstructor;
 
-public class Student {
+
+
+public class StudentShallow {
     private String name;
     private int age;
     private double psp;
     private Address address;
 
-    public Student(String name,  int age, double psp,Address address) {
+    public StudentShallow(String name,  int age, double psp,Address address) {
         this.name = name;
         this.psp = psp;
         this.age = age;
         this.address = address;
     }
 
-    // This is a Deep copy constructor
-    public Student(Student other){
+    // This is a SHALLOW copy constructor
+    public StudentShallow(StudentShallow other){
         this.name = other.name;  // s2.name = s1.name;
         this.age = other.age;
         this.psp = other.psp;
-        //Create new address with the same values.
-        this.address = new Address(other.address);
+        this.address = other.address;
     }
 
     public String getName() {
@@ -38,3 +39,4 @@ public class Student {
         this.address = address;
     }
 }
+
