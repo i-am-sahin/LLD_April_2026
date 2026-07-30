@@ -8,7 +8,7 @@ public class User {
     private  String password;
 
 
-    public String getRole(){
+    public String getRole(){ //getRole() <-- Method Signature
         return "User";
     }
     public User(){
