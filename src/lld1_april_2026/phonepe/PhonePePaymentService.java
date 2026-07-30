@@ -12,4 +12,24 @@ public class PhonePePaymentService {
 //        boolean success = yesBankAPI.transferMoney(upiId, amount);
 //        return success;
 //    }
+
+
+
+    private BankingPatnerAPI bankingPatnerAPI;
+
+    public PhonePePaymentService(BankingPatnerAPI bankingPatnerAPI) {
+        this.bankingPatnerAPI = bankingPatnerAPI;
+    }
+
+    public boolean processPayment(String from, String to, double amount) {
+        bankingPatnerAPI.connect();
+        bankingPatnerAPI.authenticate();
+        return bankingPatnerAPI.transferMoney(from,to,amount);
+
+    }
+    public double checkBalance(String accountNumber) {
+        return bankingPatnerAPI.getBalance(accountNumber);
+    }
+
+
 }
