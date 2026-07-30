@@ -1,6 +1,8 @@
-package lld1_april_2026.inheritance;
+package lld1_april_2026.polymorphism;
 
-public class Instructor extends User{
+
+
+public class Instructor extends User {
     private String expertise;
     private double rating;
     private int coursesCreated;
