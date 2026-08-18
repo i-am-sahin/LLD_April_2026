@@ -9,10 +9,7 @@ public class Adder implements Runnable{
     @Override
     public void run() {
         for (int i = 1; i <= 10000; i++) {
-
-            synchronized (count){ //Lock on the shared Object
-                count.value += i;
-            }
+            count.incrementBy(i);
 
         }
 

@@ -23,6 +23,6 @@ public class Client {
         System.out.println(t2.getState());
         t2.join();
 
-        System.out.println("Final Count : " + count.value);
+        System.out.println("Final Count : " + count.getValue());
     }
 }
