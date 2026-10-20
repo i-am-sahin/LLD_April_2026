@@ -1,6 +1,10 @@
 package lld1_april_2026.collections;
 
+import lld1_april_2026.copyConstructor.Student;
+
 import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
 import java.util.List;
 
 public class ArrayListDemo {
@@ -26,6 +30,7 @@ public class ArrayListDemo {
         for(String s: students){
             System.out.println(s);
         }
+        List<String> studentSynchronized = Collections.synchronizedList(students); // Synchronized List : Thread-safe version of ArrayList
     }
 
 }
